@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <main>
+
+    <form>
+      <fieldset aria-label="enter your date of birth">
+        <label for="day">
+          Day
+          <input type="text" name="day" id="day" placeholder="DD">
+        </label>
+  
+        <label for="month">
+          Month
+          <input type="text" name="month" id="month" placeholder="MM">
+        </label>
+  
+        <label for="year">
+          Year
+          <input type="text" name="year" id="year" placeholder="YYYY">
+        </label>
+      </fieldset>
+
+      <fieldset aria-label="submit information below">
+        <input type="submit" value="send" aria-label="click here to submit">
+      </fieldset>
+
+    </form>
+
+    <div aria-roledescription="shows the years, months and days of your life since your birthday">
+      <p ><span aria-roledescription="years">--</span>years</p>
+      <p ><span aria-roledescription="months">--</span>months</p>
+      <p ><span aria-roledescription="days">--</span>days</p>
+    </div>
+
+  </main>
+  
+</body>
+</html>
