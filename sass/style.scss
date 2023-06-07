@@ -1,0 +1,8 @@
+@import './resets/resets.scss';
+@import './variables/variables.scss';
+
+body {
+    min-height: 100vh;
+    @include displayFlex(column, center, center);
+    @include poppins(1rem,auto);
+}
