@@ -16,7 +16,7 @@
 
     <form class="form">
       <fieldset class="form__fieldset-date" aria-label="enter your date of birth">
-        <label class="form__label" for="day">
+        <label class="form__label form__label--error" for="day">
           Day
           <input class="form__input" type="text" name="day" id="day" placeholder="DD">
         </label>
@@ -33,14 +33,14 @@
       </fieldset>
 
       <fieldset class="form__fieldset-submit" aria-label="submit your information">
-        <input class="form__submit" type="submit" value="send" aria-label="click here to submit">
+        <button class="form__submit" type="submit" value="" aria-label="click here to submit"></button>
       </fieldset>
     </form>
 
     <div class="date-result"  aria-roledescription="shows the years, months and days of your life since your birthday">
-      <p class="date-result__description"><span class="date-result__value" aria-roledescription="years">--</span>years</p>
-      <p class="date-result__description"><span class="date-result__value" aria-roledescription="months">--</span>months</p>
-      <p class="date-result__description"><span class="date-result__value" aria-roledescription="days">--</span>days</p>
+      <p class="date-result__description"><span class="date-result__value" aria-roledescription="years">-- </span>years</p>
+      <p class="date-result__description"><span class="date-result__value" aria-roledescription="months">-- </span>months</p>
+      <p class="date-result__description"><span class="date-result__value" aria-roledescription="days">-- </span>days</p>
     </div>
 
   </main>

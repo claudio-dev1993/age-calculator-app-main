@@ -4,5 +4,101 @@
 body {
     min-height: 100vh;
     @include displayFlex(column, center, center);
-    @include poppins(1rem,auto);
+    @include fontType('Poppins',1rem,auto);
+    padding: 0 1rem;
+    background-color: $Light-grey;
+}
+
+.app {
+    min-height: 486px;
+    padding: 3rem 1.5rem;
+    background-color: $White;
+    border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
+    @include displayFlex(column, start, space-between);
+
+    .form {
+
+        &__fieldset-date {
+            @include displayFlex(row, center, center);
+            column-gap: 1rem;
+        }
+
+        &__label {
+            @include fontType('Poppins',12px,700);
+            text-transform: uppercase;
+            color: $Smokey-grey;
+        }
+
+        &__input {
+            width: 87px;
+            height: 54px;
+            border: .08rem solid $Smokey-grey;
+            border-radius: .5rem;
+            color: $Off-black;
+            @include fontType('Poppins-ExtraBold',20px,700);
+            text-transform: uppercase;
+            padding: 1rem;
+            margin-top: .3rem;
+            outline-color: transparent;
+            &::placeholder {
+                @include fontType('Poppins',20px,700);
+            }
+
+            &:hover {
+                border-color: $Purple;
+                transition: .5s;
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: solid .05rem $Purple;
+            }
+
+            &--success {
+                border-color: $Light-green;
+            }
+
+            &--error {
+                border-color: $Light-red;
+            
+            }
+
+        }
+
+        &__fieldset-submit {
+            @include displayFlex(row, center, center);
+            margin: 1rem 0;
+            background: url('/assets/images/line.svg') repeat-x center; 
+        }
+
+        &__submit {
+            width: 64px;
+            height: 64px;
+            background-color: $Purple;
+            border-radius: 50%;
+            &::after {
+                content: url('/assets/images/icon-arrow.svg');
+            }
+
+            &:hover {
+                background-color: $Off-black;
+                transition: .5s;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+    .date-result {
+
+        &__description {
+            @include fontType('Poppins-ExtraBoldItalic',56px,800);
+            font-style: italic;
+        }
+
+        &__value {
+            color: $Purple;
+        }
+    }
 }

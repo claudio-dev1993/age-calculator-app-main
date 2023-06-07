@@ -12,10 +12,6 @@ a {
   text-decoration: none;
 }
 
-input[type=submit] {
-  background-color: transparent;
-}
-
 @font-face {
   font-family: "Poppins";
   src: url("/assets/fonts/Poppins-Regular.ttf"), url("/assets/fonts/Poppins-Italic.ttf"), url("/assets/fonts/Poppins-ExtraBoldItalic.ttf"), url("/assets/fonts/Poppins-ExtraBold.ttf"), url("/assets/fonts/Poppins-BoldItalic.ttf"), url("/assets/fonts/Poppins-Bold.ttf");
@@ -30,6 +26,97 @@ body {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1rem;
   font-weight: auto;
+  padding: 0 1rem;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.app {
+  min-height: 486px;
+  padding: 3rem 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: space-between;
+}
+.app .form__fieldset-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.app .form__label {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(0, 1%, 44%);
+}
+.app .form__input {
+  width: 87px;
+  height: 54px;
+  border: 0.08rem solid hsl(0, 1%, 44%);
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 8%);
+  font-family: "Poppins-ExtraBold", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 0.3rem;
+  outline-color: transparent;
+}
+.app .form__input::placeholder {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.app .form__input:hover {
+  border-color: hsl(259, 100%, 65%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.app .form__input:focus {
+  outline: solid 0.05rem hsl(259, 100%, 65%);
+}
+.app .form__input--success {
+  border-color: rgba(77, 225, 77, 0.768);
+}
+.app .form__input--error {
+  border-color: hsl(0, 100%, 67%);
+}
+.app .form__fieldset-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  background: url("/assets/images/line.svg") repeat-x center;
+}
+.app .form__submit {
+  width: 64px;
+  height: 64px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+}
+.app .form__submit::after {
+  content: url("/assets/images/icon-arrow.svg");
+}
+.app .form__submit:hover {
+  background-color: hsl(0, 0%, 8%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.app .date-result__description {
+  font-family: "Poppins-ExtraBoldItalic", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  font-style: italic;
+}
+.app .date-result__value {
+  color: hsl(259, 100%, 65%);
 }
 
 /*# sourceMappingURL=style.css.map */
