@@ -106,7 +106,7 @@ body {
 }
 .app .form__submit:hover {
   background-color: hsl(0, 0%, 8%);
-  transition: 0.5s;
+  transition: 0.8s;
   cursor: pointer;
 }
 .app .date-result__description {
@@ -117,6 +117,31 @@ body {
 }
 .app .date-result__value {
   color: hsl(259, 100%, 65%);
+}
+
+@media (min-width: 768px) {
+  .app .form__input {
+    display: block;
+    width: 130px;
+  }
+  .app .date-result__description {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1024px) {
+  .app .form__fieldset-date {
+    justify-content: flex-start;
+  }
+  .app .form__input {
+    width: 160px;
+  }
+  .app .form__fieldset-submit {
+    justify-content: flex-end;
+    min-width: 728px;
+  }
+  .app .date-result__description {
+    font-size: 80px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

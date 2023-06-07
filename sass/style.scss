@@ -34,6 +34,7 @@ body {
             height: 54px;
             border: .08rem solid $Smokey-grey;
             border-radius: .5rem;
+            
             color: $Off-black;
             @include fontType('Poppins-ExtraBold',20px,700);
             text-transform: uppercase;
@@ -81,10 +82,12 @@ body {
             }
 
             &:hover {
-                background-color: $Off-black;
-                transition: .5s;
+                background-color:$Off-black;
+                transition: .8s;
                 cursor: pointer;
             }
+
+            
         }
 
 
@@ -101,4 +104,50 @@ body {
             color: $Purple;
         }
     }
+}
+
+@media (min-width: 768px) {
+  .app {
+    .form {
+
+        &__input {
+            display: block;
+            width: 130px;
+        }
+    }
+
+    .date-result {
+        &__description {
+            font-size: 70px;
+        }
+    }
+  }  
+}
+
+@media (min-width: 1024px) {
+    .app {
+        
+        
+        .form {
+            &__fieldset-date {
+                justify-content: flex-start;
+            }
+
+            &__input {
+                width: 160px;
+            }
+
+            &__fieldset-submit {
+                justify-content: flex-end;
+                min-width: 728px;
+               
+            }
+        }
+    
+        .date-result {
+            &__description {
+                font-size: 80px;
+            }
+        }
+      }  
 }
