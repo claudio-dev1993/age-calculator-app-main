@@ -10,7 +10,7 @@ body {
 }
 
 .app {
-    min-height: 486px;
+    min-height: 30.37rem;
     padding: 3rem 1.5rem;
     background-color: $White;
     border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
@@ -24,25 +24,25 @@ body {
         }
 
         &__label {
-            @include fontType('Poppins',12px,700);
+            @include fontType('Poppins',0.75rem,700);
             text-transform: uppercase;
             color: $Smokey-grey;
         }
 
         &__input {
-            width: 87px;
-            height: 54px;
+            width: 5.43rem;
+            height: 3.37rem;
             border: .08rem solid $Smokey-grey;
             border-radius: .5rem;
             
             color: $Off-black;
-            @include fontType('Poppins-ExtraBold',20px,700);
+            @include fontType('Poppins-ExtraBold',1.25rem,700);
             text-transform: uppercase;
             padding: 1rem;
             margin-top: .3rem;
             outline-color: transparent;
             &::placeholder {
-                @include fontType('Poppins',20px,700);
+                @include fontType('Poppins',1.25rem,700);
             }
 
             &:hover {
@@ -73,8 +73,8 @@ body {
         }
 
         &__submit {
-            width: 64px;
-            height: 64px;
+            width: 4rem;
+            height: 4rem;
             background-color: $Purple;
             border-radius: 50%;
             &::after {
@@ -96,7 +96,7 @@ body {
     .date-result {
 
         &__description {
-            @include fontType('Poppins-ExtraBoldItalic',56px,800);
+            @include fontType('Poppins-ExtraBoldItalic',3.5rem,800);
             font-style: italic;
         }
 
@@ -106,47 +106,49 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 37rem) {//600px
+    .app {
+        .form {
+            &__input {
+                display: block;
+            }
+        }
+      }
+}
+
+@media (min-width: 48rem) {//768px
   .app {
     .form {
-
         &__input {
-            display: block;
-            width: 130px;
+            width: 8.12rem;
         }
     }
-
     .date-result {
         &__description {
-            font-size: 70px;
+            font-size: 4.37rem;
         }
     }
   }  
 }
 
-@media (min-width: 1024px) {
-    .app {
-        
-        
+@media (min-width: 64rem) {//1024px
+    .app {        
+        min-width: 52.5rem;        
         .form {
             &__fieldset-date {
                 justify-content: flex-start;
             }
-
             &__input {
-                width: 160px;
+                width: 10rem;
             }
-
             &__fieldset-submit {
                 justify-content: flex-end;
-                min-width: 728px;
-               
+                min-width: 45.5rem;             
             }
-        }
-    
+        }    
         .date-result {
             &__description {
-                font-size: 80px;
+                font-size: 5rem;
             }
         }
       }  
