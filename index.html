@@ -14,33 +14,36 @@
 
   <main class="app">
 
-    <form class="form">
+    <form class="form"  id="mainForm">
       <fieldset class="form__fieldset-date" aria-label="enter your date of birth">
-        <label class="form__label form__label--error" for="day">
+        <label class="form__label" for="day">
           Day
           <input class="form__input" type="text" name="day" id="day" placeholder="DD">
+          <p>message</p>
         </label>
 
         <label class="form__label" for="month">
           Month
           <input class="form__input" type="text" name="month" id="month" placeholder="MM">
+          <p>message</p>
         </label>
 
         <label class="form__label" for="year">
           Year
           <input class="form__input" type="text" name="year" id="year" placeholder="YYYY">
+          <p>message</p>
         </label>
       </fieldset>
 
       <fieldset class="form__fieldset-submit" aria-label="submit your information">
-        <button class="form__submit" type="submit" value="" aria-label="click here to submit"></button>
+        <button class="form__submit" id="submit" type="submit" value="" aria-label="click here to submit"></button>
       </fieldset>
     </form>
 
     <div class="date-result"  aria-roledescription="shows the years, months and days of your life since your birthday">
-      <p class="date-result__description"><span class="date-result__value" aria-roledescription="years">-- </span>years</p>
-      <p class="date-result__description"><span class="date-result__value" aria-roledescription="months">-- </span>months</p>
-      <p class="date-result__description"><span class="date-result__value" aria-roledescription="days">-- </span>days</p>
+      <p class="date-result__description"><span class="date-result__value" id="resultYear" aria-roledescription="years">--</span> years</p>
+      <p class="date-result__description"><span class="date-result__value" id="resultMonth" aria-roledescription="months">--</span> months</p>
+      <p class="date-result__description"><span class="date-result__value" id="resultDay" aria-roledescription="days">--</span> days</p>
     </div>
 
   </main>
